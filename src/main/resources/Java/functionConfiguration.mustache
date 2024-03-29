@@ -42,7 +42,15 @@ import org.springframework.context.annotation.Description;
 {{#operations}}
 public class {{classname}}SpringAiFunctionConfiguration {
   {{#operation}}
+
+  {{#allParams}}
+  {{#-first}}
   public record Request_{{operationId}}({{#allParams}}{{{dataType}}} {{paramName}}{{^-last}}, {{/-last}}{{/allParams}}) {}
+  {{/-first}}
+  {{/allParams}}
+  {{^allParams}}
+  public class Request_{{operationId}} {}
+  {{/allParams}}
 
   {{#returnType}}
   public record Response_{{operationId}}({{{returnType}}} value) {}
