@@ -61,7 +61,7 @@ To use the generated OpenAPI client in Spring AI:
 
 1. Add the library into your project.
 
-2. Import the `Configuration` or using component scanning.
+2. Import the `Configuration` or use component scanning.
 
 ```java
 @Import({
