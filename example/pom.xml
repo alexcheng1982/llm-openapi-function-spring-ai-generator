@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.github.alexcheng1982</groupId>
+  <artifactId>openapi-function-universities</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <openapi-generator-version>7.4.0</openapi-generator-version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openapitools</groupId>
+        <artifactId>openapi-generator-maven-plugin</artifactId>
+        <version>${openapi-generator-version}</version>
+        <executions>
+          <execution>
+            <id>generate-client-code</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <generatorName>Java</generatorName>
+              <library>native</library>
+              <inputSpec>${project.basedir}/universities.yaml</inputSpec>
+              <groupId>io.github.alexcheng1982</groupId>
+              <artifactId>openapi-function-universities-client</artifactId>
+              <apiPackage>
+                io.github.alexcheng1982.openapifunction.universities.client.api
+              </apiPackage>
+              <modelPackage>
+                io.github.alexcheng1982.openapifunction.universities.client.model
+              </modelPackage>
+              <invokerPackage>
+                io.github.alexcheng1982.openapifunction.universities.client
+              </invokerPackage>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>io.github.alexcheng1982</groupId>
+            <artifactId>openapi-function-spring-ai-generator</artifactId>
+            <version>1.0.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>  
