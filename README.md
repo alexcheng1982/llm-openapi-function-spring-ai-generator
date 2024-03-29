@@ -1,7 +1,8 @@
 # OpenAPI Generator for Spring AI Functions
 
 Generate Spring
-AI [functions](https://docs.spring.io/spring-ai/reference/api/functions.html) to
+AI [functions](https://docs.spring.io/spring-ai/reference/api/functions.html)
+from OpenAPI spec to
 be used with LLMs.
 
 Each OpenAPI operation will be converted into a `Function` and register to
@@ -88,8 +89,4 @@ UserMessage userMessage = new UserMessage(
 ChatResponse response = chatClient.call(new Prompt(List.of(userMessage),
     OpenAiChatOptions.builder().withFunction("searchUniversities")
         .build())); // (1) Enable the function
-
-logger.
-
-info("Response: {}",response);
 ```
