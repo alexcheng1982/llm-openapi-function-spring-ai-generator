@@ -1,5 +1,8 @@
 # OpenAPI Generator for Spring AI Functions
 
+[![build](https://github.com/alexcheng1982/llm-openapi-function-spring-ai-generator/actions/workflows/build.yaml/badge.svg)](https://github.com/alexcheng1982/llm-openapi-function-spring-ai-generator/actions/workflows/build.yaml)
+![Maven Central Version](https://img.shields.io/maven-central/v/io.github.alexcheng1982/openapi-function-spring-ai-generator)
+
 Generate Spring
 AI [functions](https://docs.spring.io/spring-ai/reference/api/functions.html)
 from OpenAPI spec to
