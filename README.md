@@ -3,7 +3,7 @@
 Generate Spring
 AI [functions](https://docs.spring.io/spring-ai/reference/api/functions.html)
 from OpenAPI spec to
-be used with LLMs.
+be used with LLMs. Connect existing APIs with LLMs.
 
 Each OpenAPI operation will be converted into a `Function` and register to
 Spring context.
