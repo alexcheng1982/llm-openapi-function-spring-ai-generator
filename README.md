@@ -17,6 +17,18 @@ See [example](example).
 
 ## Code Generation
 
+See [pom.xml](example/pom.xml) of the example. Add the custom generator as a
+dependency of OpenAPI Generator Maven plugin.
+
+```xml
+
+<dependency>
+  <groupId>io.github.alexcheng1982</groupId>
+  <artifactId>openapi-function-spring-ai-generator</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 For each API defined in OpenAPI spec, a Spring `Configuration` will be
 generated. For each operation, the generator will generate:
 
