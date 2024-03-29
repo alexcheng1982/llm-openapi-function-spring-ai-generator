@@ -12,6 +12,8 @@ Spring context.
 
 See [example](example).
 
+## Code Generation
+
 For each API defined in OpenAPI spec, a Spring `Configuration` will be
 generated. For each operation, the generator will generate:
 
@@ -50,7 +52,9 @@ public class UniversitiesApiSpringAiFunctionConfiguration {
 }
 ```
 
-To use the generated OpenAPI client:
+## Use Generated Client
+
+To use the generated OpenAPI client in Spring AI:
 
 1. Add the library into your project.
 
